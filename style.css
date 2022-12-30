@@ -1,0 +1,147 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a.nav-link:hover {
+  color: gray;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+/* ---------animation-------------- */
+
+#business-text {
+  font-weight: 500;
+  font-size: 100px;
+  padding-top: 20px;
+  animation: landing 5s linear 2s infinite alternate-reverse;
+  -webkit-animation: landing 5s linear 2s infinite alternate-reverse;
+  }
+@keyframes landing{
+  2%{
+    transform: scaleX(0);
+} 
+50%{
+    transform: scaleX(2);
+}
+75%{
+    transform: scaleX(3);
+}
+100%{
+     transform: scaleX(0);
+}
+}
+
+#header-img {
+  width: 450px;
+  height: 250px;
+  margin-top: 200px;
+}
+/* -----------------About us------------------------------ */
+#about-us-img {
+  width: 550px;
+  height: 450px;
+}
+
+#right-about-us {
+  padding-left: 100px;
+}
+
+.about-us {
+  padding-bottom: 20px;
+  font-size: 60px;
+  font-weight: 600;
+}
+/* -------------------------OUR SERVICES------------------------------------ */
+.slider {
+  margin-right: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  display: inline-block;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin: 10px;
+}
+.card {
+  flex: 0 0 auto;
+  padding: 40px;
+}
+
+.mobile-view-body {
+  padding-left: 20px;
+}
+/* --------------------------Footer--------------------------------------- */
+
+input {
+  width: 70vw !important;
+  display: flex;
+  justify-items: center !important;
+}
+
+.button {
+  width: 10% !important;
+  margin-left: 200px;
+}
+
+.bg {
+  background-color: black;
+}
+
+.hover-box:hover {
+  color: white;
+  background-color: black;
+}
+
+/* -------------------------Media Queries------------------------------ */
+
+@media screen and (max-width: 768px) {
+  .mobile-view-header-btn {
+    margin-right: 10px;
+  }
+  .card {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+  #header-text {
+    font-weight: 500;
+    font-size: 60px;
+  }
+
+  #header-img {
+    width: 300px;
+    height: 150px;
+    margin-top: -40px;
+    padding-right: 35px;
+  }
+
+  #about-us-img {
+    width: 300px;
+    height: 250px;
+  }
+
+  .mobile-view-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  #right-about-us {
+    padding-left: 0px !important;
+  }
+
+  .button {
+    width: 10% !important;
+    margin-left: 100px;
+  }
+
+  .mobile-view-body {
+    padding-left: 15px;
+  }
+}
+
