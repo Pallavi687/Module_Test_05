@@ -16,7 +16,7 @@ a.nav-link:hover {
   font-weight: 500;
   font-size: 100px;
   padding-top: 20px;
-  animation: landing 5s linear 2s infinite alternate-reverse;
+  animation: landing 3s linear 2s infinite alternate-reverse;
   -webkit-animation: landing 5s linear 2s infinite alternate-reverse;
   }
 @keyframes landing{
@@ -84,9 +84,10 @@ input {
   justify-items: center !important;
 }
 
-.button {
+.submit{
   width: 10% !important;
-  margin-left: 200px;
+  margin-left: 432px;
+  padding-left: 20px;
 }
 
 .bg {
